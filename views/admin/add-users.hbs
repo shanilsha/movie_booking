@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/stylesheets/style.css">
+<link href="css/sb-admin-2.css" rel="stylesheet">
+<link href="css/sb-admin-2.min.css" rel="stylesheet">
+{{>admin-section}}
+<section>
+    <div class="container" mt-4>
+        <div class="row">
+
+        </div>
+
+        <div class="col-md-6 ">
+            <h2> Theaters Owners Details</h2>
+            <form action="/admin/add-users" method="post" class="mt-5" enctype="multipart/form-data">
+
+                <label for="">Image</label>
+                <input type="file" name="Image" class="form-control">
+
+                <label for="">Owner Name</label>
+                <input type="text" name="Owner Name" class="form-control">
+
+
+
+                <label for="">Theater Name</label>
+                <input type="text" name="Theater Name" class="form-control">
+
+                <label for="">Email</label>
+                <input type="text" name="Email" class="form-control">
+
+                <button type="Submit" class="btn btn-primary mr-4">Submit</button>
+
+                
+            </form>
+
+            
+        </div>
+
+
+    </div>
+</section>

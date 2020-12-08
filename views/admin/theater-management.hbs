@@ -1,0 +1,43 @@
+ <link rel="stylesheet" href="/stylesheets/style.css">
+ <link href="css/sb-admin-2.css" rel="stylesheet">
+ <link href="css/sb-admin-2.min.css" rel="stylesheet">
+<section>
+       {{>admin-section}}
+    <div class="container">
+        <h3>Theater Owners</h3>
+        <div class="row mt-4">
+            <a href="/admin/add-users" class="btn btn-success ml-auto">Add Owners</a>
+
+        </div>
+      
+
+    </div>
+    
+
+    <table class="table table-bordered mt-5">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Theaters owners name</th>
+      <th scope="col">Theater name</th>
+      <th scope="col">theaters</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each owners}}
+    <tr>
+      <th scope="row">1</th>
+      <td><img style="width:50px;height:50px" src="/owners-image/{{this._id}}.jpg" alt=""></td>
+      <td>{{this.Owner Name}}</td>
+      <td>{{this.Theater Name}}</td>
+      
+    </tr>
+    {{/each}}
+    
+  </tbody>
+
+  
+
+</table>
+</section>
